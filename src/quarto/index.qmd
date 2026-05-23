@@ -1,5 +1,5 @@
 ---
 title: "Left Robotics"
+bibliography: references.bib
 ---
 
-A website for bringing robotics to the people. I'm currently working on bringing up the site and flushing out a detailed mission statement. There will eventually be written content for the mind, along with the code for the robots.
