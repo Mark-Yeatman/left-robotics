@@ -1,0 +1,22 @@
+[build-system]
+requires = ["maturin>=1.13,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "test_project"
+requires-python = ">=3.14"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+dynamic = ["version"]
+dependencies = [
+    "tyro",
+]
+
+[tool.maturin]
+python-source = "python"
+
+[project.scripts]
+sum = "test_project.sum:main"

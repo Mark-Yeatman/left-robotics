@@ -1,1 +1,1 @@
-# left-robotics
+For now, see the website [leftrobotics.org](leftrobotics.org).
