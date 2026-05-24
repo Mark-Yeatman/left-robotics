@@ -1,0 +1,21 @@
+---
+title: "Code"
+format:
+  html:
+    embed-resources: true
+---
+This is a test of plotly.
+
+```{python}
+import plotly.io as pio
+pio.renderers.default = "plotly_mimetype+notebook_connected"
+
+import plotly.express as px
+import numpy as np
+import pandas
+x = np.linspace(-100, 100, 5000)
+y = np.sin(x) / x
+df = pandas.DataFrame(data = np.vstack([x, y]).T, columns=["x", "y"])
+fig = px.line(df, x="x", y="y")
+fig.show()
+```

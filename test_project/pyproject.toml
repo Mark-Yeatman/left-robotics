@@ -13,6 +13,7 @@ classifiers = [
 dynamic = ["version"]
 dependencies = [
     "tyro",
+    "numpy",
 ]
 
 [tool.maturin]
